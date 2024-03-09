@@ -24,14 +24,14 @@ module.exports = () => {
         swDest: 'service-worker.js', 
       }),
       new WebpackPwaManifest({
-        name: 'Your App Name',
+        name: 'PWA-text-edior',
         short_name: 'App',
-        description: 'Your app description',
+        description: 'This is PWA text editor that can be used offline',
         background_color: '#ffffff',
         crossorigin: 'use-credentials', 
         icons: [
           {
-            src: path.resolve('src/images/log.png'), 
+            src: path.resolve('src/images/logo.png'), 
             sizes: [96, 128, 192, 256, 384, 512], 
             destination: path.join('assets', 'icons'),
           },
